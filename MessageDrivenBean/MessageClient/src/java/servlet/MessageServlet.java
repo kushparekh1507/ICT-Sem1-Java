@@ -71,7 +71,7 @@ public class MessageServlet extends HttpServlet {
             MessageProducer mp=session.createProducer(queue);
             
             TextMessage message=session.createTextMessage();
-            message.setText("Hello World");
+            message.setText("HELLO WORLD");
             
             mp.send(message);
             
